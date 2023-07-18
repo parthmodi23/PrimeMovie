@@ -6,7 +6,16 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.grid{
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:1.6rem;
+}
+.card2{
+  padding: 2em;
+  border: 1px solid black;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
