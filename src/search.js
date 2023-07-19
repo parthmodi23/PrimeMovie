@@ -17,16 +17,20 @@ function Search() {
   return (
     <div className="App">
     {
-        Movies.map((movie) => (
+        Movies.map((movie) =>
+         (
+            
           <div className="column" key={movie.imdbID}>
-            <div className="card2" style={{ display: "center" }} >
+            <div className="App">
+            <div className="card2" >
               <Link to={`/moviedetails/${movie.imdbID}`}>
                 <h1>{movie.Title}</h1>
                 <div><img src={movie.Poster} alt={movie.Title} /></div>
               </Link>
-            </div>
+            </div></div>
           </div>
-        ))
+        )
+        )
       }</div>
   );
 }
