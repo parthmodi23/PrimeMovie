@@ -18,9 +18,9 @@ function Moviedetails(){
 
     return(
         <div className="App">
-            <h1>{moviedetail.Title}</h1>
+            <h1>Movie Title :<br></br>{moviedetail.Title}</h1>
             <img src={moviedetail.Poster} alt={moviedetail.Title}/>
-           <h2> <p>Year:{moviedetail.Year}</p></h2>
+           <h2> <p>Year:{moviedetail.Year}<br></br></p></h2>
            <h2> <p>Type:{moviedetail.Type}</p></h2>
 
         </div>
