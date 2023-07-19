@@ -24,11 +24,12 @@ function Homepage() {
     <>
       <div className="row">
         <div className="App">
+            <div className="card2" >
           <h1>Movie Details</h1>
-          <input style={{width:"500cm",height:"300cm"}} type="text" value={searchInput} onChange={handleSearchChange} />
+          <input  type="text" value={searchInput} onChange={handleSearchChange} />
           <Link to={`/search/${searchInput}`}>
             <button>Search</button>
-          </Link>
+          </Link></div>
           {
             mydata.map((movie) => (
               <div className="column" key={movie.imdbID}>
