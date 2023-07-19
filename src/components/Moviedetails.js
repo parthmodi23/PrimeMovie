@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-
+import { Link } from 'react-router-dom';
 function Moviedetails(){
     const { imdbID }=useParams();
     const [moviedetail,setMoviedetail]=useState(null);
@@ -22,7 +22,9 @@ function Moviedetails(){
             <img src={moviedetail.Poster} alt={moviedetail.Title}/>
            <h2> <p>Year:{moviedetail.Year}<br></br></p></h2>
            <h2> <p>Type:{moviedetail.Type}</p></h2>
-
+           <Link to="/">
+                <button  style={{color:"black"}}type="submit" >click to go back</button>
+              </Link>
         </div>
     );
 

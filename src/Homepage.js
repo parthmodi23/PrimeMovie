@@ -5,6 +5,7 @@ import './App.css';
 
 function Homepage() {
   const [mydata, setMydata] = useState([]);
+  const [searchInput, setSearchInput] = useState('');
 
   useEffect(() => {
     axios
@@ -15,26 +16,33 @@ function Homepage() {
       })
   }, []);
 
+  const handleSearchChange = (event) => {
+    setSearchInput(event.target.value);
+  };
+
   return (
     <>
-    <div class="row"> 
-  
-      <div className="App">
-        <h1>Movie Details</h1>
-        {
-          mydata.map((movie) => (
-            <div class="column">
-            <div className="card2" key={movie.imdbID} style={{display:"center"}} >
-            
-    
-              <Link to={`/moviedetails/${movie.imdbID}`}>
-                <h1>{movie.Title}</h1>
-                <div><img src={movie.Poster} alt={movie.Title} /></div>
-              </Link>
-            </div></div>
-          ))
-        }
-      </div></div>
+      <div className="row">
+        <div className="App">
+          <h1>Movie Details</h1>
+          <input style={{width:"500cm",height:"300cm"}} type="text" value={searchInput} onChange={handleSearchChange} />
+          <Link to={`/search/${searchInput}`}>
+            <button>Search</button>
+          </Link>
+          {
+            mydata.map((movie) => (
+              <div className="column" key={movie.imdbID}>
+                <div className="card2" style={{ display: "center" }} >
+                  <Link to={`/moviedetails/${movie.imdbID}`}>
+                    <h1>{movie.Title}</h1>
+                    <div><img src={movie.Poster} alt={movie.Title} /></div>
+                  </Link>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
     </>
   );
 }

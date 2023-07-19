@@ -28,8 +28,8 @@
   gap:1.6rem;
 }
 .card2{
-  padding: 2em;
-  border: 1px solid black;
+  padding: 1em;
+  border: 1px solid black;    
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
