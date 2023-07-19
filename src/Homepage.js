@@ -17,10 +17,13 @@ function Homepage() {
 
   return (
     <>
+    <div class="row"> 
+  
       <div className="App">
         <h1>Movie Details</h1>
         {
           mydata.map((movie) => (
+            <div class="column">
             <div className="card2" key={movie.imdbID} style={{display:"center"}} >
             
     
@@ -28,10 +31,10 @@ function Homepage() {
                 <h1>{movie.Title}</h1>
                 <div><img src={movie.Poster} alt={movie.Title} /></div>
               </Link>
-            </div>
+            </div></div>
           ))
         }
-      </div>
+      </div></div>
     </>
   );
 }

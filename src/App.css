@@ -1,7 +1,21 @@
 .App {
   text-align: center;
   color: red;
+  background-image: linear-gradient(rgb(157, 185, 92),rgb(214, 116, 63),blue);
+  
 }
+.column {
+  
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 10px;
+}
+
+/* Clear floats after the columns */
 
 .App-logo {
   height: 40vmin;
