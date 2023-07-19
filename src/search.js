@@ -15,7 +15,7 @@ function Search() {
       });
   }, [searchtext]);
   return (
-    <>
+    <div className="App">
     {
         Movies.map((movie) => (
           <div className="column" key={movie.imdbID}>
@@ -27,7 +27,7 @@ function Search() {
             </div>
           </div>
         ))
-      }</>
+      }</div>
   );
 }
 
