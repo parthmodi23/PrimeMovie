@@ -1,19 +1,10 @@
 .App {
   text-align: center;
-  color: red;
-  background-image: linear-gradient(rgb(157, 185, 92),rgb(214, 116, 63),blue);
+  color: rgb(46, 8, 36);
+  background-image: linear-gradient(rgb(157, 185, 92),rgb(207, 131, 89),rgb(54, 54, 165));
   
-}
-.column {
-  
-  float: left;
-  width: 30%;
-  padding: 10px;
 }
 
-.column img {
-  margin-top: 10px;
-}
 
 /* Clear floats after the columns */
 

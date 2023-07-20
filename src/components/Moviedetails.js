@@ -20,10 +20,12 @@ function Moviedetails(){
         <div className="App">
             <h1>Movie Title :<br></br>{moviedetail.Title}</h1>
             <img src={moviedetail.Poster} alt={moviedetail.Title}/>
-           <h2> <p>Year:{moviedetail.Year}<br></br></p></h2>
-           <h2> <p>Type:{moviedetail.Type}</p></h2>
+           <h2> <p>Actors : {moviedetail.Actors}<br></br></p></h2>
+           <h2> <p>Year : {moviedetail.Year}<br></br></p></h2>
+           <h2> <p>Language : {moviedetail.Language}<br></br></p></h2>
+           <h2> <p>Plot : {moviedetail.Plot}</p></h2>
            <Link to="/">
-                <button  style={{color:"black"}}type="submit" >click to go back</button>
+                <button  style={{color:"black"}}type="submit" >click here to go back</button>
               </Link>
         </div>
     );
