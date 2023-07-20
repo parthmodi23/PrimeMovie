@@ -32,15 +32,13 @@ function Homepage() {
           <button>Search</button>
         </Link></div>
       <div className="App2">
-        {
-
-          mydata.map((movie) => (
+        {mydata.map((movie) => (
 
             <div key={movie.imdbID}>
               <div className="card2" style={{ display: "center" }} >
                 <Link to={`/moviedetails/${movie.imdbID}`}>
                   <h1>{movie.Title}</h1>
-                  <div><img src={movie.Poster} alt={movie.Title} width={"300px"}height={"400px"} /></div>
+                  <div><img src={movie.Poster} alt={movie.Title} width={"300px"} height={"400px"} /></div>
                 </Link>
               </div>
             </div>

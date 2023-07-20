@@ -1,12 +1,16 @@
 .App2{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     text-align: center;
     color: rgb(46, 8, 36);
     background-image: linear-gradient(rgb(157, 185, 92),rgb(207, 131, 89),rgb(54, 54, 165));
+    justify-content: center;
+  padding: 50px;
 }
 .card2{
     padding: 20px;
+    margin: 20px;
     border: 2px solid black;
 }
 .title{
