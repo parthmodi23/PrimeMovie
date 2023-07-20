@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from 'react-router-dom';
 import './App.css';
+import './homepage.css';
 
 function Homepage() {
   const [mydata, setMydata] = useState([]);
@@ -22,30 +23,34 @@ function Homepage() {
 
   return (
     <>
-      <div className="row">
-        <div className="App">
-            <div className="card2" >
-          <h1>Movie Details</h1>
-          <input  type="text" value={searchInput} onChange={handleSearchChange} />
-          <Link to={`/search/${searchInput}`}>
-            <button>Search</button>
-          </Link></div>
-          {
-            mydata.map((movie) => (
-              
-              <div key={movie.imdbID}>
-                <div className="card2" style={{ display: "center" }} >
-                  <Link to={`/moviedetails/${movie.imdbID}`}>
-                    <h1>{movie.Title}</h1>
-                    <div><img src={movie.Poster} alt={movie.Title} /></div>
-                  </Link>
-                </div>
+
+
+      <div className="title" >
+        <h1>Movie Details</h1>
+        <input type="text" value={searchInput} onChange={handleSearchChange} />
+        <Link to={`/search/${searchInput}`}>
+          <button>Search</button>
+        </Link></div>
+      <div className="App2">
+        {
+
+          mydata.map((movie) => (
+
+            <div key={movie.imdbID}>
+              <div className="card2" style={{ display: "center" }} >
+                <Link to={`/moviedetails/${movie.imdbID}`}>
+                  <h1>{movie.Title}</h1>
+                  <div><img src={movie.Poster} alt={movie.Title} width={"300px"}height={"400px"} /></div>
+                </Link>
               </div>
-            
-            ))
-          }
-        </div>
+            </div>
+
+          ))
+        }
       </div>
+
+
+
     </>
   );
 }

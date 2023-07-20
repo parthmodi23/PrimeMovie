@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import './homepage.css';
 function Search() {
   const { searchtext } = useParams();
   const [Movies, setMovies] = useState([]);
@@ -15,20 +16,21 @@ function Search() {
       });
   }, [searchtext]);
   return (
-    <div className="App">
+    <div className="App2">
     {
         Movies.map((movie) =>
          (
             
           <div key={movie.imdbID}>
-            <div className="App">
-            <div className="card2" >
+           
+           <div className="card2" >
               <Link to={`/moviedetails/${movie.imdbID}`}>
+              
                 <h1>{movie.Title}</h1>
                 <div><img src={movie.Poster} alt={movie.Title} /></div>
               </Link>
             </div></div>
-          </div>
+          
         )
         )
       }</div>

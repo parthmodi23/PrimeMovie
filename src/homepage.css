@@ -1,0 +1,25 @@
+.App2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    color: rgb(46, 8, 36);
+    background-image: linear-gradient(rgb(157, 185, 92),rgb(207, 131, 89),rgb(54, 54, 165));
+}
+.card2{
+    padding: 20px;
+    border: 2px solid black;
+}
+.title{
+    text-align: center;
+    display: center;
+    padding: 25px;
+    background-image: linear-gradient(rgb(157, 185, 92),rgb(207, 131, 89),rgb(54, 54, 165));
+  
+  }
+  .button{
+    color: black;
+    font-size: large;
+    padding: 2px;
+    font-style: normal;
+    
+  }

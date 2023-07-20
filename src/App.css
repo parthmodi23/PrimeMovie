@@ -2,7 +2,9 @@
   text-align: center;
   color: rgb(46, 8, 36);
   background-image: linear-gradient(rgb(157, 185, 92),rgb(207, 131, 89),rgb(54, 54, 165));
-  
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 
@@ -18,7 +20,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap:1.6rem;
 }
-.card2{
+
+.card{
   padding: 1em;
   border: 1px solid black;    
 }
