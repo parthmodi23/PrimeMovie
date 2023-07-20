@@ -20,7 +20,7 @@ function Search() {
         Movies.map((movie) =>
          (
             
-          <div className="column" key={movie.imdbID}>
+          <div key={movie.imdbID}>
             <div className="App">
             <div className="card2" >
               <Link to={`/moviedetails/${movie.imdbID}`}>

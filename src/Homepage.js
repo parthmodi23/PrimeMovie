@@ -32,7 +32,8 @@ function Homepage() {
           </Link></div>
           {
             mydata.map((movie) => (
-              <div className="column" key={movie.imdbID}>
+              
+              <div key={movie.imdbID}>
                 <div className="card2" style={{ display: "center" }} >
                   <Link to={`/moviedetails/${movie.imdbID}`}>
                     <h1>{movie.Title}</h1>
@@ -40,6 +41,7 @@ function Homepage() {
                   </Link>
                 </div>
               </div>
+            
             ))
           }
         </div>
