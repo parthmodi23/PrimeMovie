@@ -40,7 +40,7 @@ function Homepage() {
       </nav>
 
       <Carousel
-        interval={2000}
+        interval={1500}
         pause="hover"
         wrap={true}
         onSlide={(slideIndex) => console.log(`Active Slide: ${slideIndex}`)}
