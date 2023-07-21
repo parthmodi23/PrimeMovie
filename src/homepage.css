@@ -48,10 +48,8 @@ display: flex;
   transform: scale(1.1);
   z-index:2; 
 }
-
-/ .carousel {
-  max-height: 700px;
-  max-width: 1000px; /* Set the maximum height for the carousel */
+ .carousel {
+  max-height: 400px;
   overflow: hidden; /* Hide any overflow */
   margin-left: 350px
 }
