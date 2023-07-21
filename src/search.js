@@ -26,9 +26,10 @@ function Search() {
 
 
             <div className="card2" >
+            <h4>{movie.Title}</h4>
               <Link to={`/moviedetails/${movie.imdbID}`}>
 
-                <h4>{movie.Title}</h4>
+                
                 <div><img src={movie.Poster} alt={movie.Title} height={"400px"}/></div>
               </Link>
 
