@@ -69,4 +69,8 @@ display: flex;
   max-height: 100%; /* Set the maximum height of the image to the height of the carousel item */
   max-width: 100%; /* Set the maximum width of the image to the width of the carousel item */
 }
-
+h4,h1,h3,h2{
+  text-align:center ;
+  font-style: italic;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

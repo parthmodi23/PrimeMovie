@@ -65,7 +65,9 @@ function Homepage() {
         {mydata.map((movie) => (
           <div key={movie.imdbID}>
             <div className="card2" style={{ display: "center" }} >
+            <h4>{movie.Title}</h4>
               <Link to={`/moviedetails/${movie.imdbID}`}>
+                
                 <div className="container">
                   <div className="box">
                     <img src={movie.Poster} alt={movie.Title} width="1000px" height="400px" />
