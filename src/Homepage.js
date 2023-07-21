@@ -29,7 +29,7 @@ function Homepage() {
       <nav className="navbar bg-body-tertiary">
         <div className="container-fluid">
           <img width="250px" src={logo} alt="logo" className="navbar-brand" />
-          <h1 className="navbar-title" style={{fontSize:"50px"}} ><b>Prime Movies</b></h1>
+          <h1 className="navbar-title">Prime Movies</h1>
           <form className="d-flex" role="search">
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={searchInput} onChange={handleSearchChange} />
             <Link to={`/search/${searchInput}`}>
@@ -53,10 +53,10 @@ function Homepage() {
                 src={movie.Poster}
                 alt={movie.Title}
               />
-              <Carousel.Caption>
-                <h3>{movie.Title}</h3>
-              </Carousel.Caption>
             </Link>
+            <Carousel.Caption className="d-none d-md-block">
+              <h3>{movie.Title}</h3>
+            </Carousel.Caption>
           </Carousel.Item>
         ))}
       </Carousel>
@@ -68,8 +68,7 @@ function Homepage() {
               <Link to={`/moviedetails/${movie.imdbID}`}>
                 <div className="container">
                   <div className="box">
-                  <h4>{movie.Title}</h4>
-                    <img src={movie.Poster} alt={movie.Title} width="400px" height="400px" />
+                    <img src={movie.Poster} alt={movie.Title} width="1000px" height="400px" />
                   </div>
                 </div>
               </Link>

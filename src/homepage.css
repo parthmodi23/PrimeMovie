@@ -23,11 +23,6 @@ padding: 50px;
  
 display: flex;
 
-.searchbox{
-  
-  margin-left: 1000px;
-  margin-top: 30px;
-}
 }
 .button{
   color: black;
@@ -37,9 +32,9 @@ display: flex;
   
 }
 .box{
-  /* width:250px;
+   width:250px;
   margin:0 10px;
-  box-shadow: 0 0 20px 2px rgba(0,0,0,.1); */
+  box-shadow: 0 0 20px 2px rgba(0,0,0,.1); 
   transition:.5s;
 
 }
@@ -54,9 +49,7 @@ display: flex;
   z-index:2; 
 }
 
-/* homepage.css */
-
-.carousel {
+/ .carousel {
   max-height: 700px;
   max-width: 1000px; /* Set the maximum height for the carousel */
   overflow: hidden; /* Hide any overflow */
@@ -76,3 +69,4 @@ display: flex;
   max-height: 100%; /* Set the maximum height of the image to the height of the carousel item */
   max-width: 100%; /* Set the maximum width of the image to the width of the carousel item */
 }
+
