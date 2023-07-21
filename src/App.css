@@ -6,7 +6,15 @@
   flex-wrap: wrap;
 
 }
+.main{
 
+  background-image:url(https://img.freepik.com/free-photo/white-bricks-wall-texture_1203-1665.jpg?size=626&ext=jpg);
+  
+  background-repeat: repeat;
+  
+
+
+}
 
 /* Clear floats after the columns */
 

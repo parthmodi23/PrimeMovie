@@ -6,7 +6,7 @@ import './App.css';
 
 function HomePageComponent() {
   return (
-    <div>
+    <div className="main">
       <Router>
         <Routes>
           <Route path="/" element={<Homepage />} />

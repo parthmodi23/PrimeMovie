@@ -9,31 +9,40 @@ function Search() {
 
   useEffect(() => {
     axios
-      .get(`https://www.omdbapi.com/?s=${ searchtext }&apikey=4a3b711b`)
+      .get(`https://www.omdbapi.com/?s=${searchtext}&apikey=4a3b711b`)
       .then((response) => {
-          setMovies(response.data.Search);
-        
+        setMovies(response.data.Search);
+
       });
   }, [searchtext]);
   return (
     <div className="App2">
-    {
+      {
+
         Movies.map((movie) =>
-         (
-            
+        (
+
           <div key={movie.imdbID}>
-           
-           <div className="card2" >
+
+
+            <div className="card2" >
               <Link to={`/moviedetails/${movie.imdbID}`}>
-              
-                <h1>{movie.Title}</h1>
-                <div><img src={movie.Poster} alt={movie.Title} /></div>
+
+                <h4>{movie.Title}</h4>
+                <div><img src={movie.Poster} alt={movie.Title} height={"400px"}/></div>
               </Link>
+
             </div></div>
-          
+
+
         )
+
+
         )
-      }</div>
+      }
+
+    </div>
+
   );
 }
 

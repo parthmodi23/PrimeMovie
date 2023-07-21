@@ -1,29 +1,78 @@
 .App2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    text-align: center;
-    color: rgb(46, 8, 36);
-    background-image: linear-gradient(rgb(157, 185, 92),rgb(207, 131, 89),rgb(54, 54, 165));
-    justify-content: center;
-  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box ;
+  text-align: center;
+  color: rgb(241, 18, 18);
+  /* color: rgb(46, 8, 36);
+  background-image: linear-gradient(rgb(218, 239, 170),rgb(207, 131, 89),rgb(169, 169, 232)); */
+  justify-content: center;
+padding: 50px;
 }
 .card2{
-    padding: 20px;
-    margin: 20px;
-    border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+  /* border: 2px solid black; */
 }
 .title{
-    text-align: center;
-    display: center;
-    padding: 25px;
-    background-image: linear-gradient(rgb(157, 185, 92),rgb(207, 131, 89),rgb(54, 54, 165));
+  text-align: center;
+
+  padding: 25px;
+  background-image: linear-gradient(rgb(233, 235, 228),rgb(113, 107, 229));
+ 
+display: flex;
+
+.searchbox{
   
-  }
-  .button{
-    color: black;
-    font-size: large;
-    padding: 2px;
-    font-style: normal;
-    
-  }
+  margin-left: 1000px;
+  margin-top: 30px;
+}
+}
+.button{
+  color: black;
+  font-size: large;
+  padding: 2px;
+  font-style: normal;
+  
+}
+.box{
+  /* width:250px;
+  margin:0 10px;
+  box-shadow: 0 0 20px 2px rgba(0,0,0,.1); */
+  transition:.5s;
+
+}
+.box img{
+  /* display: block; */
+  width:100%;
+
+  border-radius: 5px;/*FOR IMAGE BOARDER CURVE FROM ALL SIDE*/
+}
+.box:hover{
+  transform: scale(1.1);
+  z-index:2; 
+}
+
+/* homepage.css */
+
+.carousel {
+  max-height: 700px;
+  max-width: 1000px; /* Set the maximum height for the carousel */
+  overflow: hidden; /* Hide any overflow */
+  margin-left: 350px
+}
+
+.carousel-inner,
+.carousel-item {
+   /* Use flexbox to center the images vertically */
+  align-items: center; /* Vertically center the images */
+  justify-content: center; /* Horizontally center the images */
+  max-height: 700px; /* Set the maximum height for the carousel items */
+}
+
+.carousel-item img {
+  object-fit: contain; /* Ensure the image scales appropriately to fit the container */
+  max-height: 100%; /* Set the maximum height of the image to the height of the carousel item */
+  max-width: 100%; /* Set the maximum width of the image to the width of the carousel item */
+}
