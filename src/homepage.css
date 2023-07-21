@@ -49,9 +49,11 @@ display: flex;
   z-index:2; 
 }
  .carousel {
-  max-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   overflow: hidden; /* Hide any overflow */
-  margin-left: 350px
+  
 }
 
 .carousel-inner,
